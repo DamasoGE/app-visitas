@@ -1,10 +1,10 @@
 services:
   frontend:
     build:
-      context: ./frontend
+      context: ./viment
       dockerfile: Dockerfile
     volumes:
-      - ./frontend:/app
+      - ./viment:/app
       - /app/node_modules #Evita que el contenedor utilice el node modules de la maquina windows
     environment:
       - CHOKIDAR_USEPOLLING=true # Activa polling para asegurar detección de cambios en Docker
@@ -12,10 +12,10 @@ services:
       - app-network
   backend:
     build:
-      context: ./backend
+      context: ./coduct
       dockerfile: Dockerfile
     volumes:
-       - ./backend:/app
+       - ./coduct:/app
        - /app/node_modules #Evita que el contenedor utilice el node modules de la maquina windows
     environment:
       - CHOKIDAR_USEPOLLING=true # Activa polling para asegurar detección de cambios en Docker
