@@ -1,6 +1,3 @@
 [submodule "coduct"]
 	path = coduct
 	url = https://github.com/DamasoGE/coduct.git
-[submodule "aparsi"]
-	path = aparsi
-	url = https://github.com/DamasoGE/aparsi.git
