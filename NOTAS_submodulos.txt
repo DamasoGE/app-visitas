@@ -1,0 +1,24 @@
+Agregar submodulos
+------------------
+git submodule add https://github.com/tuUsuario/nombrerepositorio.git nombrerepositorio
+
+Actualiza el repositorio padre con los submódulos
+----------------------------------------------
+git submodule update --init --recursive
+
+git add .gitmodules nombrerepositorio
+git commit -m "Add submodules nombrerepositorio"
+git push
+
+NOTA: Los submódulos son referencias a commit concretos de otros repositorios
+Despues de actualizar cualquiera de los otros repositorios se debe actualizar el padre
+
+Traer la ultima versión de los submodulos
+-----------------------------------------
+git submodule update --remote
+
+Actualizar el padre
+-------------------
+git add nombrerepositorio
+git commit -m "Actualizo puntero submódulo"
+git push
