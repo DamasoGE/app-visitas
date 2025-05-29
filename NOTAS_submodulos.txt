@@ -22,3 +22,19 @@ Actualizar el padre
 git add nombrerepositorio
 git commit -m "Actualizo puntero submódulo"
 git push
+
+
+Eliminar submódulo
+------------------
+git config -f .gitmodules --remove-section submodule.nombrerepositorio
+git config -f .git/config --remove-section submodule.nombrerepositorio
+git add .gitmodules
+git rm --cached nombrerepositorio
+Remove-Item -Recurse -Force .\nombrerepositorio //Eliminar la carpeta física
+git commit -m "Elimino submódulo nombrerepositorio"
+git push
+
+
+
+
+
