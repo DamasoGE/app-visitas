@@ -2,6 +2,10 @@ Agregar submodulos
 ------------------
 git submodule add https://github.com/tuUsuario/nombrerepositorio.git nombrerepositorio
 
+Descargar todo el proyecto del padre con los submodulos
+-------------------------------------------------------
+git clone --recurse-submodules <repo-url>
+
 Actualiza el repositorio padre con los submódulos
 ----------------------------------------------
 git submodule update --init --recursive
