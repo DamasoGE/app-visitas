@@ -17,12 +17,16 @@ Traer la ultima versión de los submodulos
 -----------------------------------------
 git submodule update --remote
 
+Subir los cambios de un submodulos
+----------------------------------
+Se entra en la carpeta del submódulo y se hace de la forma usual.
+NOTA: Recordad actualizar el padre
+
 Actualizar el padre
 -------------------
 git add nombrerepositorio
 git commit -m "Actualizo puntero submódulo"
 git push
-
 
 Eliminar submódulo
 ------------------
