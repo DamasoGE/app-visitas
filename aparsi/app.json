@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "aparsi",
+    "slug": "aparsi",
+    "version": "1.0.0",
+    "scheme": "aparsi",
+    "newArchEnabled": true,
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7629d11b-62e4-4a91-b4ad-fda37e38e201"
+      }
+    },
+    "android": {
+      "package": "com.damasoge.aparsi"
+    }
+  }
+}

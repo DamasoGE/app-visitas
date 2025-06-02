@@ -1,0 +1,47 @@
+Creación del proyecto en blanco
+-------------------------------
+npx create-expo-app proyectExpoBlank --template blank
+
+Para ver los errores
+--------------------
+npx expo lint
+
+Para formateo de texto
+----------------------
+npx expo install:
+prettier 
+eslint-config-prettier
+eslint-plugin-prettier
+
+
+npx expo install expo-constants -> Para acceder a la información del dispositivo
+npx expo install react-native-safe-area-context -> Para configurar los bordes en todas plataformas
+npx expo install react-native-screens -> splash screens
+npx expo install expo-linking -> enlace profundo, enlazar desde la aplicación otra aplicación
+npx expo install expo-status-bar -> para gestionar la barra de status del teléfono
+npx expo install expo-router -> para utilizar el enrutador de expo
+
+Paquetes para que funcione webview
+----------------------------------
+react-dom
+react-native-web
+@expo/metro-runtime"
+react-native-webview
+
+
+DEJANDO A UN LADO EXPO GO -> EXPO DEV
+-------------------------
+# 1. Instala expo-dev-client
+npx expo install expo-dev-client
+
+# 2. Prebuild
+npx expo prebuild
+
+# 3. Instala la app personalizada en tu emulador
+npx expo run:android
+
+# 4. Inicia el servidor de desarrollo con recarga
+npx expo start --dev-client
+
+# Por si hay algún problema de dependencias
+npx expo install --check 
