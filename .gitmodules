@@ -4,3 +4,6 @@
 [submodule "viment"]
 	path = viment
 	url = https://github.com/DamasoGE/viment.git
+[submodule "aparsi"]
+	path = aparsi
+	url = https://github.com/DamasoGE/aparsi.git
