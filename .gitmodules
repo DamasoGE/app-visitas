@@ -1,6 +1,6 @@
-[submodule "coduct"]
-	path = coduct
-	url = https://github.com/DamasoGE/coduct.git
 [submodule "viment"]
 	path = viment
 	url = https://github.com/DamasoGE/viment.git
+[submodule "coduct"]
+	path = coduct
+	url = https://github.com/DamasoGE/coduct.git
